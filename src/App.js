@@ -50,6 +50,7 @@ const onSubmit = async (e) => {
           <Form.Group>
             <Form.Label htmlFor="message">Body</Form.Label>
             <Form.Control 
+              value={body}
               as="textarea" 
               rows="5" 
               onChange={(e) => setBody(e.target.value)}
