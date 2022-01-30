@@ -33,10 +33,10 @@ const onSubmit = async (e) => {
 
   return (
     <div className="App">
-      <Container>
+      <Container className="container">
         <h2>Send SMS</h2>
         <Form 
-          className="mt-4"
+          className="mt-4 mx-auto d-block"
           onSubmit={onSubmit}
         >
           <Form.Group>
@@ -51,7 +51,7 @@ const onSubmit = async (e) => {
             <Form.Label htmlFor="message">Body</Form.Label>
             <Form.Control 
               as="textarea" 
-              rows="3" 
+              rows="5" 
               onChange={(e) => setBody(e.target.value)}
             />
           </Form.Group>
